@@ -94,6 +94,19 @@ namespace NhibernateTest
         public AdminEntityMap()
         {
             this.Property(x => x.Phone);
+            this.Map(x => x.Setting, x =>
+            {
+                x.Table("");
+                x.Key(k => k.Column(""));
+            },
+            x =>
+            {
+                x.Element(e => e.Column("`Key`"));
+            },
+            x =>
+            {
+                x.Element(e => e.Column("`Value`"));
+            });
         }
     }
 
