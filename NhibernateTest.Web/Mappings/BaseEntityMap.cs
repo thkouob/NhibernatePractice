@@ -115,4 +115,21 @@ namespace NhibernateTest
             this.Property(x => x.Length);
         }
     }
+
+    public class MessageEntityMap : BaseEntityMap<int, Message>
+    {
+        public MessageEntityMap()
+        {
+            this.Property(x => x.Content, x => x.Length(2000));
+            this.Property(x => x.Type, x => x.Type<NHibernate.Type.EnumType<MessageType>>());
+        }
+    }
+
+    public class CommentEntityMap : BaseEntityMap<int, Comment>
+    {
+        public CommentEntityMap()
+        {
+            this.Property(x => x.Content, x => x.Length(2000));
+        }
+    }
 }

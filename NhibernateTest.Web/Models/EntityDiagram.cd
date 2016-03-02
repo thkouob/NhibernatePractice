@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="NhibernateTest.BaseEntity&lt;T&gt;">
-    <Position X="3.5" Y="0.75" Width="1.5" />
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACIAAAAAAAAAAAAAAAAAAAAAMAAAAAEAAAABAAAAA=</HashCode>
       <FileName>Models\BaseEntity.cs</FileName>
@@ -11,7 +11,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="NhibernateTest.User">
-    <Position X="3.75" Y="5.25" Width="1.5" />
+    <Position X="9.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAgACAAAAAAAAAAAAQAAACAAAACAAAAAAAAAEA=</HashCode>
       <FileName>Models\User.cs</FileName>
@@ -21,7 +21,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="NhibernateTest.Product">
-    <Position X="6.5" Y="3.25" Width="1.5" />
+    <Position X="8" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAQAAQAAAABAAAAAAAAAAAACAA=</HashCode>
       <FileName>Models\Product.cs</FileName>
@@ -31,52 +31,88 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="NhibernateTest.File">
-    <Position X="10" Y="3.25" Width="1.5" />
+    <Position X="1" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Models\File.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NhibernateTest.AddressInfo">
-    <Position X="1" Y="5.5" Width="1.5" />
+    <Position X="12.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAAA=</HashCode>
       <FileName>Models\Address.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NhibernateTest.Admin">
-    <Position X="6" Y="5.5" Width="1.5" />
+    <Position X="9.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Models\Admin.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NhibernateTest.Image">
-    <Position X="11.25" Y="5.75" Width="1.5" />
+    <Position X="2.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Image.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NhibernateTest.Video">
-    <Position X="8.5" Y="5.75" Width="1.5" />
+    <Position X="0.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Video.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="NhibernateTest.Message">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <AssociationLine Name="Type" Type="NhibernateTest.MessageType">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.925" Y="0.15" Height="0.174" Width="0.837" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIIA=</HashCode>
+      <FileName>Models\Message.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Comments" />
+      <Property Name="Files" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NhibernateTest.Comment">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Comment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Message" />
+    </ShowAsAssociation>
+  </Class>
   <Enum Name="NhibernateTest.EntityStatus">
-    <Position X="6.5" Y="1" Width="1.5" />
+    <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAIAAAACAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\EntityStatus.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="NhibernateTest.ProductCategoryEnum">
-    <Position X="9" Y="0.75" Width="1.5" />
+    <Position X="8" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAIAAAAAAABAAAAAAAAAAAAgAAAAEAAAAg=</HashCode>
       <FileName>Enums\ProductCategoryEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NhibernateTest.MessageType">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAIAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Models\MessageType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Microsoft JhengHei UI" Size="9" />
