@@ -64,6 +64,7 @@ namespace NhibernateTest
             mapper.AddMapping(typeof(ProductEntityMap));
             mapper.AddMapping(typeof(FileEntityMap));
             mapper.AddMapping(typeof(UserEntityMap));
+            mapper.AddMapping(typeof(AdminEntityMap));
             mapper.AddMapping(typeof(ImageEntityMap));
             mapper.AddMapping(typeof(VideoEntityMap));
             mapper.AddMapping(typeof(CommentEntityMap));
