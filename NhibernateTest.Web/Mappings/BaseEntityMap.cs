@@ -58,10 +58,11 @@ namespace NhibernateTest
     {
         public FileEntityMap()
         {
-            this.Discriminator(x => 
-            { 
-                x.Column("FileType"); 
-                x.Type<NHibernate.Type.Int32Type>(); 
+            this.Table("`File`");
+            this.Discriminator(x =>
+            {
+                x.Column("FileType");
+                x.Type<NHibernate.Type.Int32Type>();
             });
 
             this.DiscriminatorValue(0);
@@ -69,6 +70,13 @@ namespace NhibernateTest
             this.Property(x => x.DisplayName, map => map.NotNullable(true));
             this.Property(x => x.Category, map => map.NotNullable(true));
             this.Property(x => x.Sort, map => map.NotNullable(true));
+            this.Bag(x => x.Messages,
+                    x =>
+                    {
+                        x.Table("MessageOfFile");
+                        x.Key(k => k.Column("FileId"));
+                    },
+                    x => x.ManyToMany(m => m.Column("MessageId")));
         }
     }
 
@@ -76,7 +84,7 @@ namespace NhibernateTest
     {
         public UserEntityMap()
         {
-
+            this.Table("`User`");
             this.Property(x => x.Email);
             this.Property(x => x.Password);
 
@@ -95,18 +103,18 @@ namespace NhibernateTest
         {
             this.Property(x => x.Phone);
             this.Map(x => x.Setting, x =>
-            {
-                x.Table("");
-                x.Key(k => k.Column(""));
-            },
-            x =>
-            {
-                x.Element(e => e.Column("`Key`"));
-            },
-            x =>
-            {
-                x.Element(e => e.Column("`Value`"));
-            });
+                {
+                    x.Table("");
+                    x.Key(k => k.Column(""));
+                },
+                x =>
+                {
+                    x.Element(e => e.Column("`Key`"));
+                },
+                x =>
+                {
+                    x.Element(e => e.Column("`Value`"));
+                });
         }
     }
 
@@ -135,6 +143,17 @@ namespace NhibernateTest
         {
             this.Property(x => x.Content, x => x.Length(2000));
             this.Property(x => x.Type, x => x.Type<NHibernate.Type.EnumType<MessageType>>());
+            this.Bag(x => x.Comments,
+                    x => x.Key(k => k.Column("MessageId")),
+                    x => x.OneToMany());
+
+            this.Bag(x => x.Files,
+                x =>
+                {
+                    x.Table("MessageOfFile");
+                    x.Key(k => k.Column("MessageId"));
+                },
+                x => x.ManyToMany(m => m.Column("FileId")));
         }
     }
 
@@ -143,6 +162,7 @@ namespace NhibernateTest
         public CommentEntityMap()
         {
             this.Property(x => x.Content, x => x.Length(2000));
+            this.ManyToOne(x => x.Message, x => x.Column("MessageId"));
         }
     }
 }
