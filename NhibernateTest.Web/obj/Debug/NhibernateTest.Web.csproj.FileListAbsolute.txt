@@ -104,3 +104,7 @@ C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\Nhiberna
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\zh-Hant\System.Web.Helpers.resources.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\zh-Hant\System.Web.Mvc.resources.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.csprojResolveAssemblyReference.cache
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Common.exe
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Service.exe
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Common.pdb
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Service.pdb
