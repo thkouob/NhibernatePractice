@@ -68,8 +68,6 @@ C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernateTest-master\Nhibe
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernateTest-master\NhibernateTest\NhibernateTest.Web\bin\zh-Hant\System.Web.Mvc.resources.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernateTest-master\NhibernateTest\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernateTest-master\NhibernateTest\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.pdb
-C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.dll
-C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.pdb
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Web.dll.config
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Web.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Web.pdb
@@ -77,6 +75,8 @@ C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\Nhiberna
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\EntityFramework.SqlServer.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\Iesi.Collections.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NHibernate.dll
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Common.dll
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Service.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\System.Data.SQLite.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\System.Data.SQLite.EF6.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\System.Data.SQLite.Linq.dll
@@ -86,6 +86,8 @@ C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\Nhiberna
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\System.Web.Webpages.Deployment.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\System.Web.Webpages.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\System.Web.Webpages.Razor.dll
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Common.pdb
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Service.pdb
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\EntityFramework.xml
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\Iesi.Collections.xml
@@ -104,7 +106,5 @@ C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\Nhiberna
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\zh-Hant\System.Web.Helpers.resources.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\zh-Hant\System.Web.Mvc.resources.dll
 C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.csprojResolveAssemblyReference.cache
-C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Common.exe
-C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Service.exe
-C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Common.pdb
-C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\bin\NhibernateTest.Service.pdb
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.dll
+C:\Users\ms159\Documents\Visual Studio 2013\Projects\NhibernatePractice\NhibernateTest.Web\obj\Debug\NhibernateTest.Web.pdb

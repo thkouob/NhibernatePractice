@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhibernateTest.Common", "Nh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhibernateTest.Service", "NhibernateTest.Service\NhibernateTest.Service.csproj", "{F776302C-31A3-4685-B5DA-67374B3A07B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhibernateTest.Test", "NhibernateTest.Test\NhibernateTest.Test.csproj", "{EDDAF450-A698-49E3-BFA6-30DB94838D31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F776302C-31A3-4685-B5DA-67374B3A07B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F776302C-31A3-4685-B5DA-67374B3A07B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F776302C-31A3-4685-B5DA-67374B3A07B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDDAF450-A698-49E3-BFA6-30DB94838D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDAF450-A698-49E3-BFA6-30DB94838D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDAF450-A698-49E3-BFA6-30DB94838D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDAF450-A698-49E3-BFA6-30DB94838D31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

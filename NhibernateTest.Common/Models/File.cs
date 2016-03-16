@@ -4,6 +4,11 @@ namespace NhibernateTest
 {
     public class File : BaseEntity<int>
     {
+        public File()
+        {
+            this.Messages = new List<Message>();
+        }
+
         public virtual string Name
         { get; set; }
 
@@ -16,7 +21,7 @@ namespace NhibernateTest
         public virtual int Sort
         { get; set; }
 
-        public virtual List<Message> Messages
+        public virtual IList<Message> Messages
         { get; set; }
     }
 }
