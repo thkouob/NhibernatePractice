@@ -34,10 +34,10 @@ namespace NhibernateTest
             configuration.DataBaseIntegration(c =>
             {
                 // 資料庫選用 SQLite
-                c.Dialect<MsSql2012Dialect>();
+                c.Dialect<SQLiteDialect>();
 
                 // 取用 .config 中的 "MyTestDB" 連線字串
-                c.ConnectionStringName = "NhibernateMssqlDb";
+                c.ConnectionStringName = "NhibernateSqliteDb";
 
                 // Schema 變更時的處置方式
                 c.SchemaAction = SchemaAutoAction.Create;
@@ -63,7 +63,6 @@ namespace NhibernateTest
 
             //加入Mapping
             //如果是多個 Type 可用 AddMappings
-            mapper.AddMapping(typeof(ProductEntityMap));
             mapper.AddMapping(typeof(FileEntityMap));
             mapper.AddMapping(typeof(UserEntityMap));
             mapper.AddMapping(typeof(AdminEntityMap));

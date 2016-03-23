@@ -32,34 +32,6 @@ namespace NhibernateTest
         }
     }
 
-    public class ProductEntityMap : BaseEntityMap<int, Product>
-    {
-        public ProductEntityMap()
-        {
-            Schema("dbo");
-            this.Property(x => x.Category, map =>
-            {
-                map.NotNullable(true);
-                map.Type<NHibernate.Type.EnumType<ProductCategoryEnum>>();
-            });
-            this.Property(x => x.Name, map => map.NotNullable(true));
-            this.Property(x => x.Description, map => map.NotNullable(true));
-            this.Property(x => x.Sort, map => map.NotNullable(true));
-            //this.Propertya(x => x.ProductDetail, map =>
-            //{
-            //    map.Type<NHibernate.Type.XmlDocType>();
-            //    map.NotNullable(true);
-            //});
-            //this.Discriminator(x =>
-            //{
-            //    x.Column("");
-            //    x.Type<NHibernate.Type.XmlDocType>();
-            //});
-            //this.DiscriminatorValue();
-            this.Lazy(true);
-        }
-    }
-
     public class FileEntityMap : BaseEntityMap<int, File>
     {
         public FileEntityMap()

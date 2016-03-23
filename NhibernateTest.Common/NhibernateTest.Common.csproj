@@ -54,7 +54,6 @@
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Message.cs" />
     <Compile Include="Models\MessageType.cs" />
-    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

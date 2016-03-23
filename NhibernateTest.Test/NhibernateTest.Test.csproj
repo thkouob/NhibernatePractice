@@ -106,6 +106,7 @@
     <Compile Include="UnitTestCfgXml.cs" />
     <Compile Include="UnitTestEvent.cs" />
     <Compile Include="UnitTestNhibernate.cs" />
+    <Compile Include="UnitTestService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NhibernateTest.Common\NhibernateTest.Common.csproj">
