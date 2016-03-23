@@ -27,17 +27,7 @@ namespace NhibernateTest.Test
                 db.KeywordsAutoImport = Hbm2DDLKeyWords.AutoQuote;
             });
 
-            var mapper = new ModelMapper();
-            mapper.AddMapping(typeof(UserEntityMap));
-            mapper.AddMapping(typeof(AdminEntityMap));
-            mapper.AddMapping(typeof(FileEntityMap));
-            mapper.AddMapping(typeof(ImageEntityMap));
-            mapper.AddMapping(typeof(VideoEntityMap));
-            mapper.AddMapping(typeof(MessageEntityMap));
-            mapper.AddMapping(typeof(CommentEntityMap));
-
-            var maps = mapper.CompileMappingForAllExplicitlyAddedEntities();
-            config.AddDeserializedMapping(maps, "Models");
+            config.AddDeserializedMapping(InternalHelper.GetAllMapper(), "Models");
 
             return config.BuildSessionFactory();
         }
@@ -55,13 +45,24 @@ namespace NhibernateTest.Test
             Console.WriteLine("Create Message Info");
             using (var session = factory.OpenSession())
             {
-                var message = new Message()
+                using (var trans = session.BeginTransaction())
                 {
-                    Content = "Leoli"
-                };
-                session.Save(message);
-                session.Save(new Comment() { Message = message, Content = "Hi" });
-                session.Save(new Comment() { Message = message, Content = "Nhibernate" });
+                    try
+                    {
+                        var message = new Message()
+                                   {
+                                       Content = "Leoli"
+                                   };
+                        session.Save(message);
+                        session.Save(new Comment() { Message = message, Content = "Hi" });
+                        session.Save(new Comment() { Message = message, Content = "Nhibernate" });
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        trans.Rollback();
+                    }
+                }
             }
 
             Console.WriteLine("Select Message Info");

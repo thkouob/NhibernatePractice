@@ -108,6 +108,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Hibernate.cfg.xml" />
+    <Content Include="Configuration_Templates\FireBird.cfg.xml" />
+    <Content Include="Configuration_Templates\MSSQL.cfg.xml" />
+    <Content Include="Configuration_Templates\MySql.cfg.xml" />
+    <Content Include="Configuration_Templates\Oracle.cfg.xml" />
+    <Content Include="Configuration_Templates\PostgreSQL.cfg.xml" />
+    <Content Include="Configuration_Templates\SQLite.cfg.xml" />
+    <Content Include="Configuration_Templates\SybaseASE.cfg.xml" />
+    <Content Include="Configuration_Templates\SybaseSQLAnywhere.cfg.xml" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -122,6 +131,12 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <None Include="App_Data\nhibernate-configuration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Data\nhibernate-mapping.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,7 +145,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>

@@ -55,6 +55,7 @@
     <Compile Include="Mappings\BaseEntityMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ProductService.cs" />
+    <Compile Include="TestEventListener.cs" />
     <Compile Include="Utilities\NhibernateHelper.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -100,8 +100,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="InternalHelper.cs" />
     <Compile Include="UnitTestCascade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestCfgXml.cs" />
+    <Compile Include="UnitTestEvent.cs" />
     <Compile Include="UnitTestNhibernate.cs" />
   </ItemGroup>
   <ItemGroup>

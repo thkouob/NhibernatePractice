@@ -44,6 +44,8 @@ namespace NhibernateTest
 
                 // 交易隔離等級
                 c.IsolationLevel = IsolationLevel.ReadCommitted;
+                // 用這個可以不用處理關鍵字(加"`")
+                c.KeywordsAutoImport = Hbm2DDLKeyWords.AutoQuote;
             });
 
             // 取得Mapping
