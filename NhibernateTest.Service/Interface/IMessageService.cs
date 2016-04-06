@@ -8,6 +8,6 @@ namespace NhibernateTest.Service
 {
     public interface IMessageService : IBaseService<int, Message>
     {
-
+        Message GetByUser(string userName);
     }
 }

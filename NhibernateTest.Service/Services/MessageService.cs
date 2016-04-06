@@ -27,5 +27,10 @@ namespace NhibernateTest.Service
         {
             throw new NotImplementedException();
         }
+
+        public Message GetByUser(string userName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

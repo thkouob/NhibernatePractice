@@ -63,6 +63,7 @@
     <Compile Include="Services\MessageService.cs" />
     <Compile Include="Services\UnitTestService.cs" />
     <Compile Include="Services\UserService.cs" />
+    <Compile Include="stub\MessageServiceStub.cs" />
     <Compile Include="TestEventListener.cs" />
     <Compile Include="Utilities\NhibernateHelper.cs" />
   </ItemGroup>
